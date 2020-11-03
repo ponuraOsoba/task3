@@ -1,7 +1,7 @@
 
 import java.util.stream.Stream;
 
-public class Main {
+public class Task3 {
 
     public static void main (String []args){
         int[][] intsArray= createArray(args);
