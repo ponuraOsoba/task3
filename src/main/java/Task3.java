@@ -1,5 +1,5 @@
-
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class Task3 {
 
@@ -25,6 +25,7 @@ public class Task3 {
     private static int[][] createArray(String[] stringsArray ) {
         int[][] intsArray =  new int[getFirst(stringsArray)][2];
         addArguments(intsArray, stringsArray);
+        Arrays.sort(intsArray, Comparator.comparingInt(o -> o[0]));
         return  intsArray;
     }
 
